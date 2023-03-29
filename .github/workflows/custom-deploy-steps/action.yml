@@ -9,8 +9,12 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Deploy
+    - name: Deploy 1
       shell: bash
-      run: |
-        echo npm config set token_test ${{ fromJSON(inputs.secrets).TOKEN_TEST }}
-        echo npm config set token_prod ${{ inputs.secrets.TOKEN_PROD }}
+      run: echo npm config set token_test ${{ fromJSON(inputs.secrets).TOKEN_TEST }}
+
+    - name: Deploy 2
+      shell: bash
+      run: echo npm config set token_prod ${{ fronJSON(inputs.secrets).TOKEN_PROD }}
+
+
