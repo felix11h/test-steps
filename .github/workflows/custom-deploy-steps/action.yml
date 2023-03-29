@@ -15,6 +15,6 @@ runs:
 
     - name: Deploy 2
       shell: bash
-      run: echo npm config set token_prod ${{ fronJSON(inputs.secrets).TOKEN_PROD }}
+      run: echo npm config set token_prod ${{ fromJSON(inputs.secrets).TOKEN_PROD }}
 
 
