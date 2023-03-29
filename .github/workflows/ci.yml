@@ -9,7 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run deploy steps for ${{ repository_name }}
-        uses: ./.github/workflows/custom-deploy-steps # Composite action
+      - uses: ./.github/workflows/custom-deploy-steps # Composite action
         with:
           secrets: ${{ toJSON(secrets) }}
