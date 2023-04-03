@@ -15,6 +15,6 @@ runs:
 
     - name: Deploy 2
       shell: bash
-      run: echo ${{ github.event }}
+      run: echo ${{ toJSON(github.event) }}
 
 
