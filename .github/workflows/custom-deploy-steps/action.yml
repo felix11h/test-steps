@@ -16,5 +16,14 @@ runs:
     - name: Deploy 2
       shell: bash
       run: echo "${{ toJson(github) }}"
+      
+    - name: Deploy 3
+      shell: bash
+      run: echo "$(ls .)"
+      
+    - name: Deploy 3
+      shell: bash
+      run: pwd
+      
 
 
