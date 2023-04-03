@@ -15,7 +15,7 @@ runs:
 
     - name: Deploy 2
       shell: bash
-      run: echo "${{ toJson(github) }}"
+      run: echo "${{ toJson(job) }}"
       
     - name: Deploy 3
       shell: bash
