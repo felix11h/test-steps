@@ -19,7 +19,7 @@ runs:
       
     - name: Deploy 3
       shell: bash
-      run: echo "$(ls .)"
+      run: ls -A
       
     - name: Deploy 3
       shell: bash
