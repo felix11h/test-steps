@@ -19,7 +19,9 @@ runs:
       
     - name: Deploy 3
       shell: bash
-      run: ls -A
+      run: |
+       ls -A
+       ls -A $GITHUB_WORKSPACE
       
     - name: Deploy 3
       shell: bash
